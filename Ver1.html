@@ -5,24 +5,32 @@
 <head>
   <title>C++ Principles of Programming</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="style.css">
+
+
 
 <body style="font-family:Verdana;color:black;">
-
-  <div style="background-color:limegreen;padding:15px;text-align:center;font-family:Arial Black">
+  <div id="heading2">
     <h1>C++ Principles of Programming</h1>
   </div>
-
-  <div style="overflow:auto">
+  <div id="mainbody">
     <div class="menu">
-      <p>Section</p>
-      <hr>
-      <a class="button" href="#basic">Basic Elements of C++</a>
-      <a class="button" href="#input">Input/Output</a>
-      <a class="button" href="#control">Control Structure</a>
+      <ul>
+        <li>Section</li>
+        <li>
+          <a class="button" href="#basic">Basic Elements<i class="material-icons">keyboard</i></a>
+        </li>
+        <li>
+          <a class="button" href="#input">Input/Output<i class="material-icons">settings_ethernet</i></a>
+        </li>
+        <li>
+          <a class="button" href="#control">Control Structure<i class="material-icons">settings_remote</i></a>
+        </li>
+      </ul>
     </div>
+
 
     <div class="main">
       <div id="basic">
@@ -87,7 +95,8 @@
         <h4>Simple Data Types</h4>
         <p>The simple data type is the fundamental data type in C++ because it becomes a building
           block for the structured data type, which you will start learning about in Chapter 8.
-          There are three categories of simple data: integral, floating-point and enumuration&#40will be covered in later chapters&#41.</p>
+          There are three categories of simple data: integral, floating-point and enumuration &#40; will be covered in later chapters &#41;.</p>
+
         <h5>Integral:</h5>
         <img src="basic7.png" alt="Basic7" style="height:200px">
         <h5>Floating-point:</h5>
@@ -119,8 +128,8 @@
         <p>One of the most important uses of a computer is its ability to calculate. You can use the
           standard arithmetic operators to manipulate integral and floating-point data types. There
           are five arithmetic operators:</p>
-        <p>Arithmetic Operators: &#43 &#40addition), &#45 &#40subtraction or negation&#41, &#42 &#40multiplication&#41, /
-          &#40division&#41, &#37 &#40mod, &#40modulus or remainder&#41&#41</p>
+        <p>Arithmetic Operators: &#43; &#40;addition), &#45; &#40;subtraction or negation&#41;, &#42; &#40;multiplication&#41;, /
+          &#40;division&#41;, &#37; &#40;mod, &#40;modulus or remainder&#41;&#41;</p>
         <p>You can use the operators +, -, *, and / with both integral and floatingpoint
           data types. These operators work with integral and floating-point
           data the same way as you learned in a college algebra course.</p>
@@ -133,9 +142,9 @@
         <p>When more than one arithmetic operator is used in an expression, C++ uses the operator
           precedence rules to evaluate the expression. According to the order of precedence rules
           for arithmetic operators,</p>
-        <p><b>&#42, /, &#37 </b></p>
+        <p><b>&#42;, /, &#37; </b></p>
         <p>are at a higher level of precedence than</p>
-        <p><b>&#43, &#45</b></p>
+        <p><b>&#43;, &#45;</b></p>
         <p>Note that the operators *, /, and % have the same level of precedence. Similarly, the
           operators + and - have the same level of precedence.</p>
         <p>When operators have the same level of precedence, the operations are performed from
@@ -155,11 +164,12 @@
         <h3><u>Standard output (cout)</u></h3>
         <p>On most program environments, the standard output by default is the screen, and the C++ stream object defined to access it is cout.</p>
         <p>For formatted output operations, cout is used together with the insertion operator, which is written as << (i.e., two "less than" signs). </p> <img src="input2.png" alt="Input2" style="height:70px">
-            <p>The &#60&#60 operator inserts the data that follows it into the stream that precedes it. In the examples above, it inserted the literal string Output sentence, the number 120, and the value of variable x into the standard output stream
+            <p>The &#60;&#60; operator inserts the data that follows it into the stream that precedes it. In the examples above, it inserted the literal string Output sentence, the number 120, and the value of variable x into the standard output
+              stream
               cout. Notice that the sentence in the first statement is enclosed in double quotes (") because it is a string literal, while in the last one, x is not. The double quoting is what makes the difference; when the text is enclosed between
               them, the text is printed literally; when they are not, the text is interpreted as the identifier of a variable, and its value is printed instead. For example, these two sentences have very different results:</p>
             <img src="input3.png" alt="Input3" style="height:50px">
-            <p>To insert a line break, a new-line character shall be inserted at the exact position the line should be broken. In C++, a new-line character can be specified as \n &#40i.e., a backslash character followed by a lowercase n&#41. For
+            <p>To insert a line break, a new-line character shall be inserted at the exact position the line should be broken. In C++, a new-line character can be specified as \n &#40;i.e., a backslash character followed by a lowercase n&#41;. For
               example:</p>
             <img src="input4.png" alt="Input4" style="height:50px">
             <p>This produces the following output: </p>

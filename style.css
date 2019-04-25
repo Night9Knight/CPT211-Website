@@ -1,46 +1,62 @@
 * {
   box-sizing: border-box;
+
 }
 
-.menu {
+#heading2{
+  width: auto;
+  height: auto;
+  background-color: limegreen;
+  padding: 10px;
+  text-align: center;
+  font-family: Arial Black
+}
+#mainbody{
+  overflow:auto;
+}
+
+.menu ul{
+  list-style-type: none;
+  padding: 0;
   float: left;
   width: 20%;
+  height: 100%;
   text-align: center;
+  position: fixed;
 }
 
 .menu a {
+  text-decoration: none;
   background-color: #e5e5e5;
-  padding: 8px;
-  margin-top: 7px;
+  padding: 5px;
+  margin-top: 5px;
   display: block;
-  width: 100%;
   color: black;
 }
 
 .main {
-  float: left;
-  width: 80%;
-  padding: 0 20px;
+  margin-left: 21%;
+  padding: 0 20px ;
   border: 1px solid grey;
 }
 
-.button{
+.button {
   width: auto;
   height: auto;
   border-radius: 10px;
+  transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
 }
+
 .button:hover{
   background-color: #fff380;
-  transform: scale(1.1,1.1);
+  transform: scale(1.1, 1.1);
 }
 
-#input{
-  visibility: hidden;
-}
-
-#control{
-  visibility: hidden;
+img:hover {
+  margin-left: auto;
+  margin-top: auto;
+  transform: scale(1.1, 1.1);
 }
 
 @media only screen and (max-width:620px) {
