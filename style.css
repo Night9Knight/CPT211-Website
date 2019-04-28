@@ -1,68 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Averia+Libre');
+@import url('https://fonts.googleapis.com/css?family=Alike');
+@import url('https://fonts.googleapis.com/css?family=Imprima');
+
+html {
+  scroll-behavior: smooth;
+  background-color: #75c079;
+}
+
 * {
   box-sizing: border-box;
-
 }
 
-#heading2{
-  width: auto;
-  height: auto;
-  background-color: limegreen;
-  padding: 10px;
+h2, h3, h4, h5 {
+  font-family: 'Averia Libre', cursive;
+}
+
+p {
+  font-family: 'Alike', serif;
+}
+
+.topbar {
+  width: 100%;
+  padding: 0px;
+  position: relative;
+}
+
+.topbar h1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 65%;
   text-align: center;
-  font-family: Arial Black
-}
-#mainbody{
-  overflow:auto;
+  font-family: 'Imprima', sans-serif;
+  font-size: 3em;
+  font-weight: bolder;
+  background-color: #49a04e;
+  border-radius: 10px;
 }
 
-.menu ul{
+.topbar img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+#mainbody {
+  overflow: auto;
+}
+
+.main {
+  background-color: #ffffff;
+}
+
+.menu #title_list {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Imprima', sans-serif;
+}
+
+.menu ul {
   list-style-type: none;
   padding: 0;
   float: left;
   width: 20%;
-  height: 100%;
+  height: auto;
   text-align: center;
   position: fixed;
+  background-color: #aad8ac;
+  border-radius: 10px;
 }
 
 .menu a {
   text-decoration: none;
   background-color: #e5e5e5;
-  padding: 5px;
-  margin-top: 5px;
   display: block;
   color: black;
-}
-
-.main {
-  margin-left: 21%;
-  padding: 0 20px ;
-  border: 1px solid grey;
-}
-
-.button {
+  font-family: 'Averia Libre', cursive;
   width: auto;
   height: auto;
   border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 5px;
+  margin-top: 5px;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
 }
 
-.button:hover{
+.button:hover {
   background-color: #fff380;
   transform: scale(1.1, 1.1);
 }
 
-img:hover {
+.main {
+  margin-left: 21%;
+  padding: 0 20px;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+
+.main img:hover {
   margin-left: auto;
   margin-top: auto;
-  transform: scale(1.1, 1.1);
+  transform: scale(1.2, 1.2);
+}
+
+@media only screen and (max-width:900px) {
+  .topbar h1 {
+    font-size: 2em;
+  }
 }
 
 @media only screen and (max-width:620px) {
 
   /* For mobile phones: */
-  .menu, .main {
+  .topbar {
+    margin-top: 0px;
     width: 100%;
+  }
+
+  .topbar h1 {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Imprima', sans-serif;
+    font-size: 3em;
+    font-weight: bolder;
+    background-color: #49a04e;
+    border-radius: 10px;
+  }
+
+  .main {
+    width: 80%;
   }
 }

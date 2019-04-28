@@ -5,32 +5,30 @@
 <head>
   <title>C++ Principles of Programming</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="ISO_C++_Logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-
-
 <body style="font-family:Verdana;color:black;">
-  <div id="heading2">
-    <h1>C++ Principles of Programming</h1>
+  <div class="topbar">
+    <h1><img src="ISO_C++_Logo.svg" alt="ISO C++ Logo">C++ Principles of Programming</h1>
   </div>
   <div id="mainbody">
     <div class="menu">
       <ul>
-        <li>Section</li>
+        <li id="title_list"><a href="#">Section</a></li>
         <li>
-          <a class="button" href="#basic">Basic Elements<i class="material-icons">keyboard</i></a>
+          <a class="button" href="#basic"><i class="material-icons">keyboard</i> Basic Elements</a>
         </li>
         <li>
-          <a class="button" href="#input">Input/Output<i class="material-icons">settings_ethernet</i></a>
+          <a class="button" href="#input"><i class="material-icons">settings_ethernet</i> Input/Output</a>
         </li>
         <li>
-          <a class="button" href="#control">Control Structure<i class="material-icons">settings_remote</i></a>
+          <a class="button" href="#control"><i class="material-icons">settings_remote</i> Control Structure</a>
         </li>
       </ul>
     </div>
-
 
     <div class="main">
       <div id="basic">
@@ -67,7 +65,7 @@
         <h4>Reserved Words (Keywords)</h4>
         <p>A second category of tokens is reserved word symbols. Some of the reserved word symbols
           include the following:</p>
-        <img src="basic5.png" alt="Basic5" style="height:20px">
+        <img src="basic5.png" alt="Basic5" style="height:30px">
         <p>Reserved words are also called keywords. The letters that make up a reserved word are
           always lowercase. Like the special symbols, each is considered to be a single symbol.
           Furthermore, reserved words cannot be redefined within any program; that is, they
@@ -81,7 +79,7 @@
           and must begin with a letter or underscore.</p>
         <p>Identifiers can be made of only letters, digits, and the underscore character; no other
           symbols are permitted to form an identifier.</p>
-        <img src="basic6.png" alt="Basic6" style="height:200px">
+        <img src="basic6.png" alt="Basic6" style="height:210px">
 
         <h4>Whitespaces</h4>
         <p>Every C++ program contains whitespaces. Whitespaces include blanks, tabs, and newline
@@ -109,7 +107,7 @@
           syntax rule to declare a variable is:</p>
         <p>dataType identifier;</p>
         <p>For example, consider the following statements:</p>
-        <img src="basic9.png" alt="Basic9" style="height:50px">
+        <img src="basic9.png" alt="Basic9" style="height:70px">
         <p>In the first statement, we are telling the system to allocate four bytes of memory space to
           store an int value and name that memory space counter. That is, counter is a variable
           that can store an int value. Similarly, interestRate is a variable that can store a value
@@ -120,7 +118,7 @@
         <p>where expression is evaluated and its value is assigned to variable. In C++, = is called
           the assignment operator.</p>
         <p>For example, consider the following statements:</p>
-        <img src="basic10.png" alt="Basic10" style="height:50px">
+        <img src="basic10.png" alt="Basic10" style="height:70px">
         <p>The first statement stores 5 in the variable counter, the second statement stores 0.05 in
           interestRate, and the third statement stores the character 'A' in grade. We will discuss assignment statements in detail later in this chapter.</p>
 
@@ -142,15 +140,15 @@
         <p>When more than one arithmetic operator is used in an expression, C++ uses the operator
           precedence rules to evaluate the expression. According to the order of precedence rules
           for arithmetic operators,</p>
-        <p><b>&#42;, /, &#37; </b></p>
+        <pre><p><b>&#9;&#42;,&nbsp; /,&nbsp; &#37; </b></p></pre>
         <p>are at a higher level of precedence than</p>
-        <p><b>&#43;, &#45;</b></p>
+        <pre><p><b>&#9;&#43;,&nbsp; &#45;</b></p></pre>
         <p>Note that the operators *, /, and % have the same level of precedence. Similarly, the
           operators + and - have the same level of precedence.</p>
         <p>When operators have the same level of precedence, the operations are performed from
           left to right. To avoid confusion, you can use parentheses to group arithmetic expressions.
           For example, using the order of precedence rules,</p>
-        <img src="basic11.png" alt="Basic11" style="height:150px">
+        <img src="basic11.png" alt="Basic11" style="height:170px">
       </div>
       <!-- <hr>-->
       <div id="input">
@@ -168,43 +166,43 @@
               stream
               cout. Notice that the sentence in the first statement is enclosed in double quotes (") because it is a string literal, while in the last one, x is not. The double quoting is what makes the difference; when the text is enclosed between
               them, the text is printed literally; when they are not, the text is interpreted as the identifier of a variable, and its value is printed instead. For example, these two sentences have very different results:</p>
-            <img src="input3.png" alt="Input3" style="height:50px">
+            <img src="input3.png" alt="Input3" style="height:60px">
             <p>To insert a line break, a new-line character shall be inserted at the exact position the line should be broken. In C++, a new-line character can be specified as \n &#40;i.e., a backslash character followed by a lowercase n&#41;. For
               example:</p>
-            <img src="input4.png" alt="Input4" style="height:50px">
+            <img src="input4.png" alt="Input4" style="height:70px">
             <p>This produces the following output: </p>
-            <img src="input5.png" alt="Input5" style="height:50px">
+            <img src="input5.png" alt="Input5" style="height:70px">
             <p>Alternatively, the endl manipulator can also be used to break lines. For example: </p>
-            <img src="input6.png" alt="Input6" style="height:40px">
+            <img src="input6.png" alt="Input6" style="height:60px">
             <p>This would print:</p>
-            <img src="input7.png" alt="Input7" style="height:40px">
+            <img src="input7.png" alt="Input7" style="height:60px">
 
             <h3><u>Standard input (cin)</u></h3>
             <p>In most program environments, the standard input by default is the keyboard, and the C++ stream object defined to access it is cin.</p>
             <p>For formatted input operations, cin is used together with the extraction operator, which is written as >> (i.e., two "greater than" signs). This operator is then followed by the variable where the extracted data is stored. For example:
             </p>
-            <img src="input8.png" alt="Input8" style="height:40px">
+            <img src="input8.png" alt="Input8" style="height:70px">
             <p>The first statement declares a variable of type int called age, and the second extracts from cin a value to be stored in it. This operation makes the program wait for input from cin; generally, this means that the program will wait for
               the user to enter some sequence with the keyboard. In this case, note that the characters introduced using the keyboard are only transmitted to the program when the ENTER (or RETURN) key is pressed. Once the statement with the
               extraction operation on cin is reached, the program will wait for as long as needed until some input is introduced.</p>
             <p>The extraction operation on cin uses the type of the variable after the >> operator to determine how it interprets the characters read from the input; if it is an integer, the format expected is a series of digits, if a string a
               sequence of characters, etc.</p>
-            <img src="input9.png" alt="Input9" style="height:230px">
+            <img src="input9.png" alt="Input9" style="height:250px">
             <p>As you can see, extracting from cin seems to make the task of getting input from the standard input pretty simple and straightforward. But this method also has a big drawback. What happens in the example above if the user enters
               something else that cannot be interpreted as an integer? Well, in this case, the extraction operation fails. And this, by default, lets the program continue without setting a value for variable i, producing undetermined results if the
               value of i is used later. </p>
             <p>This is very poor program behavior. Most programs are expected to behave in an expected manner no matter what the user types, handling invalid values appropriately. Only very simple programs should rely on values extracted directly
               from cin without further checking. A little later we will see how stringstreams can be used to have better control over user input.</p>
             <p>Extractions on cin can also be chained to request more than one datum in a single statement: </p>
-            <img src="input10.png" alt="Input10" style="height:30px">
+            <img src="input10.png" alt="Input10" style="height:50px">
             <p>This is equivalent to:</p>
-            <img src="input11.png" alt="Input11" style="height:50px">
+            <img src="input11.png" alt="Input11" style="height:70px">
             <p>In both cases, the user is expected to introduce two values, one for variable a, and another for variable b. Any kind of space is used to separate two consecutive input operations; this may either be a space, a tab, or a new-line
               character.</p>
 
             <h3><u>cin and strings</u></h3>
             <p>The extraction operator can be used on cin to get strings of characters in the same way as with fundamental data types:</p>
-            <img src="input12.png" alt="Input12" style="height:50px">
+            <img src="input12.png" alt="Input12" style="height:70px">
             <p>However, cin extraction always considers spaces (whitespaces, tabs, new-line...) as terminating the value being extracted, and thus extracting a string means to always extract a single word, not a phrase or an entire sentence.</p>
             <p>To get an entire line from cin, there exists a function, called getline, that takes the stream (cin) as first argument, and the string variable as second. For example:</p>
             <img src="input13.png" alt="Input13" style="height:250px">
