@@ -10,10 +10,23 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
+<script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(window).scroll(function() {
+    var scroll_position = $(window).scrollTop();
+    $('section').css({
+      'background-position-x': -scroll_position + 'px',
+    })
+  })
+</script>
+
 <body style="font-family:Verdana;color:black;">
-  <div class="topbar">
-    <h1><img src="ISO_C++_Logo.svg" alt="ISO C++ Logo">C++ Principles of Programming</h1>
-  </div>
+  <section>
+    <div class="topbar">
+      <h1><img src="ISO_C++_Logo.svg" alt="ISO C++ Logo">C++ Principles of Programming</h1>
+    </div>
+  </section>
+
   <div id="mainbody">
     <div class="menu">
       <ul>
