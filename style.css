@@ -100,6 +100,38 @@ background-attachment: fixed;
   margin-bottom: 10px;
 }
 
+
+.login-menu ul {
+	list-style-type: none;
+	padding: 0;
+	float: left;
+	width: 20%;
+	height: auto;
+	text-align: center;
+	position: fixed;
+	top: 400px;
+	background-color: #aad8ac;
+	border-radius: 10px;	
+}
+
+.login-menu #title-login{
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Imprima', sans-serif;	
+}
+
+.login-menu #title-logout{
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Imprima', sans-serif;		
+}
+
+.login-menu input{
+	width: 90%;
+}
+
 .button {
   padding: 5px;
   margin-top: 5px;

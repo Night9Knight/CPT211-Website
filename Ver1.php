@@ -1,5 +1,4 @@
-
-<?php
+﻿<?php
 	session_start();
 ?>
 
@@ -49,19 +48,28 @@
 	
 	<div class="login-menu">
 		<?php
+		if(isset($_SESSION['user_id'])){
+			echo '<form action="login.php" method="post">
+			<ul>
+			<li id="title-logout"> Welcome, '. $_SESSION['user_id'] . '</li>
+			<li> <button type="submit" name="logout-submit">Logout</button> </li>
+			</ul>
+			</form>';
+		}
+		else{
 		echo '<form action="login.php" method="post">
 			<ul>
 			<li id="title-login">Login</li>
 			<li> <input type="text" name="username" placeholder="username" /> </li>
 			<li> <input type="password" name="password" placeholder="password" /> </li>
 			<li> <button type="submit" name="login-submit">Login</button> </li>
+			<li> <button type="submit" name="signup-submit">Sign Up</button> </li>
 			</ul>
 		</form>';
+		}
 		?>
 	</div>
 	
-=======
-
     <div class="main">
       <div id="basic">
         <h2>1. Basic Elements of C++</h2>
