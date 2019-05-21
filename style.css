@@ -19,15 +19,13 @@ p {
   font-family: 'Alike', serif;
 }
 
-
+/*javascript styling*/
 section{
-position: relative;
+position: relative;	/*position of element is same as normal position*/
 width: 100%;
-height: 100px;
-background: url(ccc.jpeg);
-
-
-background-attachment: fixed;
+height: 400px;
+background: url(bbb.jpeg);	/*image*/
+background-attachment: fixed;	/*background set to fixed and will not move along scrolling*/
 }
 
 
@@ -109,7 +107,7 @@ background-attachment: fixed;
 	height: auto;
 	text-align: center;
 	position: fixed;
-	top: 400px;
+	top: 303px;
 	background-color: #aad8ac;
 	border-radius: 10px;	
 }

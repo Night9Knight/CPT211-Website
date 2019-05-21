@@ -2,8 +2,8 @@
 <script type="text/javascript">
   $(window).scroll(function() {
     var scroll_position = $(window).scrollTop();
-    $('section').css({
-      'background-position-x': -scroll_position + 'px',
+    $('section').css({	//styling of image as section is css external file
+      'background-position-x': -scroll_position + 'px',	//parallax effect formula
     })
   })
   </script>
