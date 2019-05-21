@@ -14,15 +14,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-  $(window).scroll(function() {
-    var scroll_position = $(window).scrollTop();
-    $('section').css({
-      'background-position-x': -scroll_position + 'px',
-    })
-  })
-</script>
+<script src="ver1.js"></script>
+
 
 <body style="font-family:Verdana;color:black;">
   <section>
@@ -328,6 +321,17 @@
     </div>
 
   </div>
+  
+  <div class="comment">
+  <p><b>Comment Section:</b></p>
+  <?php
+  /*Create Text Box for Comment Section*/
+  echo
+  '<form action="#" method="post">
+<textarea id="note" rows="6" cols="205" placeholder="Write something here..."></textarea>
+</form>'
+?>
+</div>
 
   <div style="background-color:#e5e5e5;text-align:left;padding:5px">
     Contact us:
