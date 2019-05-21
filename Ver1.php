@@ -1,4 +1,5 @@
 ﻿<?php
+	/*starts the session, with this, data can be move through multiple pages with this function*/
 	session_start();
 ?>
 
@@ -48,6 +49,8 @@
 	
 	<div class="login-menu">
 		<?php
+		/*the user has logged in, hence the value for user_id is set, refer to the login.php for
+		more details*/
 		if(isset($_SESSION['user_id'])){
 			echo '<form action="login.php" method="post">
 			<ul>
@@ -57,6 +60,7 @@
 			</form>';
 		}
 		else{
+			//user not logged in
 		echo '<form action="login.php" method="post">
 			<ul>
 			<li id="title-login">Login</li>
